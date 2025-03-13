@@ -138,118 +138,76 @@ public class DisasterVictimTest {
    
     @Test
     public void testSetAndGetGender() {
-        String newGender = "male";
-        victim.setGender(newGender);
-        assertEquals("setGender should update and getGender should return the new gender", newGender.toLowerCase(), victim.getGender());
+        // Test all valid gender options: "man", "woman", "non-binary person"
+        victim.setGender("man");
+        assertEquals("setGender should accept 'man' as valid input", "man", victim.getGender());
+        
+        victim.setGender("woman");
+        assertEquals("setGender should accept 'woman' as valid input", "woman", victim.getGender());
+        
+        victim.setGender("non-binary");
+        assertEquals("setGender should accept 'non-binary person' as valid input", "non-binary", victim.getGender());
     }
 	
-	
-
-    @Test
-    public void testAddFamilyConnection() {
-        DisasterVictim victim1 = new DisasterVictim("Jane", "2025-01-20");
-        DisasterVictim victim2 = new DisasterVictim("John", "2025-01-22");
-
-        FamilyRelation relation = new FamilyRelation(victim2, "parent", victim1);
-        FamilyRelation[] expectedRelations = {relation};
-        victim2.setFamilyConnections(expectedRelations);
-
-        FamilyRelation[] testFamily = victim2.getFamilyConnections();
-        boolean correct = false;
-
-        if ((testFamily!=null) && (testFamily[0] == expectedRelations[0])) {
-                correct = true;
-        }
-        assertTrue("addFamilyConnection should add a family relationship", correct);
-    }
-
-    @Test
-    public void testAddPersonalBelonging() {
-        Supply newSupply = new Supply("Emergency Kit", 1);
-        victim.addPersonalBelonging(newSupply);
-        Supply[] testSupplies = victim.getPersonalBelongings();
-        boolean correct = false;
- 
-        int i;
-        for (i = 0; i < testSupplies.length; i++) {
-            if (testSupplies[i] == newSupply) {
-                correct = true;
-            }
-        }
-        assertTrue("addPersonalBelonging should add the supply to personal belongings", correct);
-    }
 
 @Test
-public void testRemoveFamilyConnection() {
-        DisasterVictim victim1 = new DisasterVictim("Jane", "2025-01-20");
-        DisasterVictim victim2 = new DisasterVictim("John", "2025-01-22");
-        FamilyRelation relation1 = new FamilyRelation(victim, "sibling", victim1);
-        FamilyRelation relation2 = new FamilyRelation(victim, "sibling", victim2);
-        FamilyRelation[] expectedRelations = {relation2};
-        FamilyRelation[] originalRelations = {relation1, relation2};
-        victim.setFamilyConnections(originalRelations);
-
-        DisasterVictim victim = new DisasterVictim("Freda", "2025-01-23");
-        victim.addFamilyConnection(relation1);
-        victim.addFamilyConnection(relation2);
-        victim.removeFamilyConnection(relation1);
-
-        FamilyRelation[] testFamily = victim.getFamilyConnections();
-        boolean correct = true;
-
-        int i;
-        for (i = 0; i < testFamily.length; i++) {
-            if (testFamily[i] == relation1) {
-                correct = false;
-            }
-        }
-    assertTrue("removeFamilyConnection should remove the family member", true);
-}  
-
-@Test
-public void testRemovePersonalBelonging() {
+public void testAllocateSupply() {
     
-        Supply supplyToRemove = suppliesToSet.get(0); 
-        victim.addPersonalBelonging(supplyToRemove); 
-        victim.removePersonalBelonging(supplyToRemove);
-
-        Supply[] testSupplies = victim.getPersonalBelongings();
-        boolean correct = true;
- 
-        int i;
-        for (i = 0; i < testSupplies.length; i++) {
-            if (testSupplies[i] == supplyToRemove) {
-                correct = false;
-            }
-        }
-    assertTrue("removePersonalBelonging should remove the supply from personal belongings", true);
+    // Create supplies at the location
+    Blanket blanket = new Blanket("B001");
+    Water water = new Water();
+    Cot cot = new Cot("C001", "115", "B6");
+    
+    location.addSupply(blanket);
+    location.addSupply(water);
+    location.addSupply(cot);
+    
+    // Allocate supplies to victim
+    victim.allocateSupply(blanket);
+    victim.allocateSupply(water);
+    victim.allocateSupply(cot);
+    
+    // Check that supplies are allocated to victim
+    assertTrue("Blanket should be allocated to victim", victim.getSupplies().contains(blanket));
+    assertTrue("Water should be allocated to victim", victim.getSupplies().contains(water));
+    assertTrue("Cot should be allocated to victim", victim.getSupplies().contains(cot));
+    
+    
+    // Check that supplies are no longer at location
+    assertFalse("Blanket should not be at location", location.getSupplies().contains(blanket));
+    assertFalse("Water should not be at location", location.getSupplies().contains(water));
+    assertFalse("Cot should not be at location", location.getSupplies().contains(cot));
 }
 
+@Test
+public void testSetAndGetFamilyGroup() {
+    FamilyGroup familyGroup = new FamilyGroup("Dalan Family");
+    victim.setFamilyGroup(familyGroup);
+    assertEquals("getFamilyGroup should return the assigned family group", 
+                familyGroup, victim.getFamilyGroup());
+    assertTrue("Family group should contain the victim", 
+              familyGroup.getMembers().contains(victim));
+}
 
- @Test
-    public void testSetFamilyConnection() {
-        DisasterVictim victim1 = new DisasterVictim("Jane", "2025-01-20");
-        DisasterVictim victim2 = new DisasterVictim("John", "2025-01-22");
-
-        FamilyRelation relation = new FamilyRelation(victim1, "sibling", victim2);
-        FamilyRelation[] expectedRelations = {relation};
-        victim1.setFamilyConnections(expectedRelations);
-        boolean correct = true;
-
-       // We have not studied overriding equals in arrays of custom objects so we will manually evaluate equality
-       FamilyRelation[] actualRecords = victim1.getFamilyConnections();
-       if (expectedRelations.length != actualRecords.length) {
-           correct = false;
-       } else {    
-           int i;
-           for (i=0;i<actualRecords.length;i++) {
-               if (expectedRelations[i] != actualRecords[i]) {
-                   correct = false;
-               }
-           }
-       }
-       assertTrue("Family relation should be set", correct);
-    }
+// 3. Replace FamilyRelation tests with FamilyGroup tests
+// Replace testAddFamilyConnection with:
+@Test
+public void testFamilyGroupMembership() {
+    DisasterVictim victim1 = new DisasterVictim("Jane", "2025-01-20");
+    DisasterVictim victim2 = new DisasterVictim("John", "2025-01-22");
+    
+    FamilyGroup familyGroup = new FamilyGroup( "Dalan Family");
+    familyGroup.addMember(victim1);
+    familyGroup.addMember(victim2);
+    
+    assertEquals("Victim1 should be assigned to the family group", 
+                familyGroup, victim1.getFamilyGroup());
+    assertEquals("Victim2 should be assigned to the family group", 
+                familyGroup, victim2.getFamilyGroup());
+    assertTrue("Family group should contain both victims", 
+              familyGroup.getMembers().contains(victim1) && 
+              familyGroup.getMembers().contains(victim2));
+}
 
   @Test
 public void testSetMedicalRecords() {
@@ -273,31 +231,6 @@ public void testSetMedicalRecords() {
         }
     }
     assertTrue("setMedicalRecords should correctly update medical records", correct);
-}
-
-
-   @Test
-public void testSetPersonalBelongings() {
-    Supply one = new Supply("Tent", 1);
-    Supply two = new Supply("Jug", 3);
-    Supply[] newSupplies = {one, two};
-    boolean correct = true;
-
-    victim.setPersonalBelongings(newSupplies);
-    Supply[] actualSupplies = victim.getPersonalBelongings();
-
-    // We have not studied overriding equals in arrays of custom objects so we will manually evaluate equality
-    if (newSupplies.length != actualSupplies.length) {
-        correct = false;
-    } else {
-        int i;
-        for (i=0;i<newSupplies.length;i++) {
-            if (actualSupplies[i] != newSupplies[i]) {
-                correct = false;
-            }
-        }
-    }
-    assertTrue("setPersonalBelongings should correctly update personal belongings", correct);
 }
 
 
