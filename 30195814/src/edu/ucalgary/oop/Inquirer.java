@@ -1,9 +1,3 @@
-/*
-Copyright Ann Barcomb and Khawla Shnaikat, 2024-2025
-Licensed under GPL v3
-See LICENSE.txt for more information.
-*/
-
 package edu.ucalgary.oop;
 
 public class Inquirer {
@@ -11,6 +5,7 @@ public class Inquirer {
     private final String LAST_NAME;
     private final String INFO;
     private final String SERVICES_PHONE;
+    private Location location;
 
     public Inquirer(String firstName, String lastName, String phone, String info) {
         this.FIRST_NAME = firstName;
@@ -18,6 +13,11 @@ public class Inquirer {
         this.SERVICES_PHONE = phone;
         this.INFO = info;
 
+    }
+    public Inquirer(DisasterVictim disasterVictim){
+        this.FIRST_NAME = disasterVictim.getFirstName();
+        this.LAST_NAME = disasterVictim.getLastName();
+        this.SERVICES_PHONE = phone;
     }
 
     public String getFirstName() { return this.FIRST_NAME; }
