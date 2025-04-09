@@ -5,7 +5,14 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.time.LocalDate;
 
-
+/**
+ * Represents a disaster victim in the emergency response system.
+ * Each victim has personal details, medical records, and personal belongings.
+ * 
+ * @author Devante Kwizera
+ * @version 1.0
+ * @since 2025-04-09
+ */
 public class DisasterVictim {
     private static int counter = 0;
 
@@ -20,6 +27,13 @@ public class DisasterVictim {
     private String gender;
     private String comments;
 
+
+     /**
+     * Constructor for creating a disaster victim with a first name and entry date.
+     * @param firstName Victim's first name.
+     * @param ENTRY_DATE Date the victim entered the center (format: YYYY-MM-DD).
+     * @throws IllegalArgumentException if date format is invalid.
+     */
     public DisasterVictim(String firstName, String ENTRY_DATE) throws IllegalArgumentException {
         this.firstName = firstName;
         if (!isValidDateFormat(ENTRY_DATE)) {
@@ -29,6 +43,13 @@ public class DisasterVictim {
         this.ASSIGNED_SOCIAL_ID = generateSocialID();
     }
 
+    /**
+     * Constructor for creating a disaster victim with first name, entry date, and date of birth.
+     * @param firstName Victim's first name.
+     * @param ENTRY_DATE Entry date (format: YYYY-MM-DD).
+     * @param dateOfBirth Date of birth (format: YYYY-MM-DD).
+     * @throws IllegalArgumentException if format is invalid or birth is after entry.
+     */
     public DisasterVictim(String firstName, String ENTRY_DATE, String dateOfBirth) throws IllegalArgumentException {
         this.firstName = firstName;
         if (!isValidDateFormat(ENTRY_DATE)) {
@@ -196,9 +217,37 @@ public class DisasterVictim {
         }
         this.gender = gender.toLowerCase(); // Store in a consistent format
     }
+     /**
+     * Removes all expired water supplies (used one day after allocation).
+     */
+   
+    public void removeExpiredWater() {
+        if (personalBelongings == null || personalBelongings.length == 0) {
+             return;
+        }
+
+        int count = 0;
+        for (Supply supply : personalBelongings) {
+          if (!(supply instanceof Water && ((Water) supply).isExpired())) {
+             count++;
+          }
+        }
+
+        Supply[] filtered = new Supply[count];
+        int i = 0;
+        for (Supply supply : personalBelongings) {
+          if (!(supply instanceof Water && ((Water) supply).isExpired())) {
+             filtered[i++] = supply;
+          }
+        }
+
+         this.personalBelongings = filtered;
+}
+
+}
 
    
-}
+
 
 
 
