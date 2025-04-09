@@ -1,5 +1,10 @@
 package edu.ucalgary.oop;
 
+/**
+ * Abstract class representing a generic supply item.
+ * Specific item types like Water, Cot, etc. should extend this class.
+ */ 
+
 public class Supply {
     private String type;
     private int quantity;
