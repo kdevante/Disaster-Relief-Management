@@ -13,7 +13,7 @@ public class DisasterVictim {
     private String lastName;
     private String dateOfBirth;
     private final int ASSIGNED_SOCIAL_ID;
-    private ArrayList<FamilyRelation> familyConnections = new ArrayList<>();
+    private FamilyGroup familyGroup;
     private ArrayList<MedicalRecord> medicalRecords = new ArrayList<>();
     private Supply[] personalBelongings;
     private final String ENTRY_DATE;
@@ -100,8 +100,8 @@ public class DisasterVictim {
         return ASSIGNED_SOCIAL_ID;
     }
 
-  public FamilyRelation[] getFamilyConnections() {
-        return familyConnections.toArray(new FamilyRelation[0]);
+    public FamilyGroup getFamilyGroup() {
+        return familyGroup;
     }
 
     public MedicalRecord[] getMedicalRecords() {
@@ -112,14 +112,9 @@ public class DisasterVictim {
         return this.personalBelongings;
     }
 
-    // The add and remove methods remain correct.
-    
-    // Correct the setters to accept Lists instead of arrays
-    public void setFamilyConnections(FamilyRelation[] connections) {
-        this.familyConnections.clear();
-        for (FamilyRelation newRecord : connections) {
-            addFamilyConnection(newRecord);
-        }
+
+    public void setFamilyGroup(FamilyGroup group) {
+        this.familyGroup = group;
     }
 
     public void setMedicalRecords(MedicalRecord[] records) {
@@ -171,14 +166,6 @@ public class DisasterVictim {
             }
             index++;
         }
-    }
-
-    public void removeFamilyConnection(FamilyRelation exRelation) {
-        familyConnections.remove(exRelation);
-    }
-
-    public void addFamilyConnection(FamilyRelation record) {
-        familyConnections.add(record);
     }
 
 
