@@ -1,0 +1,384 @@
+  <translation>
+    <key>gender_man</key>
+    <value>Man</value>
+  </translation>
+
+  <translation>
+    <key>gender_woman</key>
+    <value>Woman</value>
+  </translation>
+
+  <translation>
+    <key>gender_nb</key>
+    <value>Non-binary person</value>
+  </translation>
+
+  <translation>
+    <key>app_name</key>
+    <value>Disaster Management System</value>
+  </translation>
+
+  <translation>
+    <key>main_menu_title</key>
+    <value>Main Menu</value>
+  </translation>
+
+  <translation>
+    <key>menu_manage_people</key>
+    <value>Manage People</value>
+  </translation>
+
+  <translation>
+    <key>menu_manage_locations</key>
+    <value>Manage Locations</value>
+  </translation>
+
+  <translation>
+    <key>menu_manage_supplies</key>
+    <value>Manage Supplies</value>
+  </translation>
+
+  <translation>
+    <key>menu_manage_inquiries</key>
+    <value>Manage Inquiries</value>
+  </translation>
+
+  <translation>
+    <key>menu_exit</key>
+    <value>Exit</value>
+  </translation>
+
+  <translation>
+    <key>back_to_main</key>
+    <value>Return to Main Menu</value>
+  </translation>
+
+  <translation>
+    <key>select_option</key>
+    <value>Select an option (1-%d):</value>
+  </translation>
+
+  <translation>
+    <key>invalid_option</key>
+    <value>Invalid option. Please try again.</value>
+  </translation>
+
+  <translation>
+    <key>operation_successful</key>
+    <value>Operation completed successfully.</value>
+  </translation>
+
+  <translation>
+    <key>operation_failed</key>
+    <value>Operation failed.</value>
+  </translation>
+
+  <translation>
+    <key>not_found</key>
+    <value>Not found.</value>
+  </translation>
+
+  <translation>
+    <key>press_enter</key>
+    <value>Press Enter to continue...</value>
+  </translation>
+
+  <translation>
+    <key>confirm_exit</key>
+    <value>Are you sure you want to exit? (y/n):</value>
+  </translation>
+
+  <translation>
+    <key>invalid_input</key>
+    <value>Invalid input. Please try again.</value>
+  </translation>
+
+  <translation>
+    <key>loading_data</key>
+    <value>Loading data, please wait...</value>
+  </translation>
+
+  <translation>
+    <key>saving_data</key>
+    <value>Saving data, please wait...</value>
+  </translation>
+
+  <translation>
+    <key>people_menu_title</key>
+    <value>People Management</value>
+  </translation>
+
+  <translation>
+    <key>add_person</key>
+    <value>Add New Person</value>
+  </translation>
+
+  <translation>
+    <key>edit_person</key>
+    <value>Edit Person</value>
+  </translation>
+
+  <translation>
+    <key>view_person</key>
+    <value>View Person Details</value>
+  </translation>
+
+  <translation>
+    <key>list_people</key>
+    <value>List All People</value>
+  </translation>
+
+  <translation>
+    <key>first_name_prompt</key>
+    <value>First Name:</value>
+  </translation>
+
+  <translation>
+    <key>last_name_prompt</key>
+    <value>Last Name:</value>
+  </translation>
+
+  <translation>
+    <key>date_of_birth_prompt</key>
+    <value>Date of Birth (YYYY-MM-DD):</value>
+  </translation>
+
+  <translation>
+    <key>gender_prompt</key>
+    <value>Gender (man, woman, non-binary person):</value>
+  </translation>
+
+  <translation>
+    <key>comments_prompt</key>
+    <value>Additional Comments:</value>
+  </translation>
+
+  <translation>
+    <key>phone_number_prompt</key>
+    <value>Phone Number:</value>
+  </translation>
+
+  <translation>
+    <key>family_group_prompt</key>
+    <value>Family Group ID:</value>
+  </translation>
+
+  <translation>
+    <key>locations_menu_title</key>
+    <value>Location Management</value>
+  </translation>
+
+  <translation>
+    <key>add_location</key>
+    <value>Add New Location</value>
+  </translation>
+
+  <translation>
+    <key>edit_location</key>
+    <value>Edit Location</value>
+  </translation>
+
+  <translation>
+    <key>view_location</key>
+    <value>View Location Details</value>
+  </translation>
+
+  <translation>
+    <key>list_locations</key>
+    <value>List All Locations</value>
+  </translation>
+
+  <translation>
+    <key>name_prompt</key>
+    <value>Name:</value>
+  </translation>
+
+  <translation>
+    <key>address_prompt</key>
+    <value>Address:</value>
+  </translation>
+
+  <translation>
+    <key>supplies_menu_title</key>
+    <value>Supply Management</value>
+  </translation>
+
+  <translation>
+    <key>add_supply</key>
+    <value>Add New Supply</value>
+  </translation>
+
+  <translation>
+    <key>allocate_supply</key>
+    <value>Allocate Supply</value>
+  </translation>
+
+  <translation>
+    <key>view_supplies</key>
+    <value>View Supplies</value>
+  </translation>
+
+  <translation>
+    <key>list_supplies</key>
+    <value>List All Supplies</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_prompt</key>
+    <value>Supply Type:</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_water</key>
+    <value>Water</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_blanket</key>
+    <value>Blanket</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_cot</key>
+    <value>Cot</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_personal</key>
+    <value>Personal Belonging</value>
+  </translation>
+
+  <translation>
+    <key>quantity_prompt</key>
+    <value>Quantity:</value>
+  </translation>
+
+  <translation>
+    <key>description_prompt</key>
+    <value>Description:</value>
+  </translation>
+
+  <translation>
+    <key>room_prompt</key>
+    <value>Room Number:</value>
+  </translation>
+
+  <translation>
+    <key>grid_prompt</key>
+    <value>Grid Location:</value>
+  </translation>
+
+  <translation>
+    <key>allocate_to_prompt</key>
+    <value>Allocate to:</value>
+  </translation>
+
+  <translation>
+    <key>allocate_to_person</key>
+    <value>Person</value>
+  </translation>
+
+  <translation>
+    <key>allocate_to_location</key>
+    <value>Location</value>
+  </translation>
+
+  <translation>
+    <key>inquiries_menu_title</key>
+    <value>Inquiry Management</value>
+  </translation>
+
+  <translation>
+    <key>add_inquiry</key>
+    <value>Add New Inquiry</value>
+  </translation>
+
+  <translation>
+    <key>view_inquiry</key>
+    <value>View Inquiry Details</value>
+  </translation>
+
+  <translation>
+    <key>list_inquiries</key>
+    <value>List All Inquiries</value>
+  </translation>
+
+  <translation>
+    <key>inquirer_type</key>
+    <value>Inquirer Type:</value>
+  </translation>
+
+  <translation>
+    <key>inquirer_type_victim</key>
+    <value>Disaster Victim</value>
+  </translation>
+
+  <translation>
+    <key>inquirer_type_external</key>
+    <value>External Inquirer</value>
+  </translation>
+
+  <translation>
+    <key>inquirer_prompt</key>
+    <value>Inquirer:</value>
+  </translation>
+
+  <translation>
+    <key>missing_person_prompt</key>
+    <value>Missing Person:</value>
+  </translation>
+
+  <translation>
+    <key>inquiry_date_prompt</key>
+    <value>Date of Inquiry (YYYY-MM-DD):</value>
+  </translation>
+
+  <translation>
+    <key>last_known_location_prompt</key>
+    <value>Last Known Location:</value>
+  </translation>
+
+  <translation>
+    <key>info_provided_prompt</key>
+    <value>Information Provided:</value>
+  </translation>
+
+  <translation>
+    <key>error_database_connection</key>
+    <value>Could not connect to database. Check connection settings.</value>
+  </translation>
+
+  <translation>
+    <key>error_invalid_date</key>
+    <value>Invalid date format. Please use YYYY-MM-DD.</value>
+  </translation>
+
+  <translation>
+    <key>error_invalid_gender</key>
+    <value>Invalid gender. Please use 'man', 'woman', or 'non-binary person'.</value>
+  </translation>
+
+  <translation>
+    <key>error_loading_language</key>
+    <value>Could not load language file. Using default English (en-CA).</value>
+  </translation>
+
+  <translation>
+    <key>error_log_message</key>
+    <value>Error has been logged to errorlog.txt</value>
+  </translation>
+
+  <translation>
+    <key>error_required_field</key>
+    <value>This field is required.</value>
+  </translation>
+
+  <translation>
+    <key>report_person</key>
+    <value>%s entered the %s facility on %s.</value>
+  </translation>
+
+  <translation>
+    <key>input_firstname</key>
+    <value>Enter the person's first name:</value>
+  </translation>

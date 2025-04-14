@@ -1,0 +1,384 @@
+  <translation>
+    <key>gender_man</key>
+    <value>Homme</value>
+  </translation>
+
+  <translation>
+    <key>gender_woman</key>
+    <value>Femme</value>
+  </translation>
+
+  <translation>
+    <key>gender_nb</key>
+    <value>Personne non binaire</value>
+  </translation>
+
+  <translation>
+    <key>app_name</key>
+    <value>Système de gestion des catastrophes</value>
+  </translation>
+
+  <translation>
+    <key>main_menu_title</key>
+    <value>Menu principal</value>
+  </translation>
+
+  <translation>
+    <key>menu_manage_people</key>
+    <value>Gérer les personnes</value>
+  </translation>
+
+  <translation>
+    <key>menu_manage_locations</key>
+    <value>Gérer les emplacements</value>
+  </translation>
+
+  <translation>
+    <key>menu_manage_supplies</key>
+    <value>Gérer les fournitures</value>
+  </translation>
+
+  <translation>
+    <key>menu_manage_inquiries</key>
+    <value>Gérer les demandes de renseignements</value>
+  </translation>
+
+  <translation>
+    <key>menu_exit</key>
+    <value>Quitter</value>
+  </translation>
+
+  <translation>
+    <key>back_to_main</key>
+    <value>Retour au menu principal</value>
+  </translation>
+
+  <translation>
+    <key>select_option</key>
+    <value>Sélectionnez une option (1-%d):</value>
+  </translation>
+
+  <translation>
+    <key>invalid_option</key>
+    <value>Option invalide. Veuillez réessayer.</value>
+  </translation>
+
+  <translation>
+    <key>operation_successful</key>
+    <value>Opération terminée avec succès.</value>
+  </translation>
+
+  <translation>
+    <key>operation_failed</key>
+    <value>L'opération a échoué.</value>
+  </translation>
+
+  <translation>
+    <key>not_found</key>
+    <value>Non trouvé.</value>
+  </translation>
+
+  <translation>
+    <key>press_enter</key>
+    <value>Appuyez sur Entrée pour continuer...</value>
+  </translation>
+
+  <translation>
+    <key>confirm_exit</key>
+    <value>Êtes-vous sûr de vouloir quitter? (o/n):</value>
+  </translation>
+
+  <translation>
+    <key>invalid_input</key>
+    <value>Entrée invalide. Veuillez réessayer.</value>
+  </translation>
+
+  <translation>
+    <key>loading_data</key>
+    <value>Chargement des données, veuillez patienter...</value>
+  </translation>
+
+  <translation>
+    <key>saving_data</key>
+    <value>Sauvegarde des données, veuillez patienter...</value>
+  </translation>
+
+  <translation>
+    <key>people_menu_title</key>
+    <value>Gestion des personnes</value>
+  </translation>
+
+  <translation>
+    <key>add_person</key>
+    <value>Ajouter une nouvelle personne</value>
+  </translation>
+
+  <translation>
+    <key>edit_person</key>
+    <value>Modifier une personne</value>
+  </translation>
+
+  <translation>
+    <key>view_person</key>
+    <value>Voir les détails d'une personne</value>
+  </translation>
+
+  <translation>
+    <key>list_people</key>
+    <value>Lister toutes les personnes</value>
+  </translation>
+
+  <translation>
+    <key>first_name_prompt</key>
+    <value>Prénom:</value>
+  </translation>
+
+  <translation>
+    <key>last_name_prompt</key>
+    <value>Nom de famille:</value>
+  </translation>
+
+  <translation>
+    <key>date_of_birth_prompt</key>
+    <value>Date de naissance (AAAA-MM-JJ):</value>
+  </translation>
+
+  <translation>
+    <key>gender_prompt</key>
+    <value>Genre (homme, femme, personne non binaire):</value>
+  </translation>
+
+  <translation>
+    <key>comments_prompt</key>
+    <value>Commentaires supplémentaires:</value>
+  </translation>
+
+  <translation>
+    <key>phone_number_prompt</key>
+    <value>Numéro de téléphone:</value>
+  </translation>
+
+  <translation>
+    <key>family_group_prompt</key>
+    <value>ID du groupe familial:</value>
+  </translation>
+
+  <translation>
+    <key>locations_menu_title</key>
+    <value>Gestion des emplacements</value>
+  </translation>
+
+  <translation>
+    <key>add_location</key>
+    <value>Ajouter un nouvel emplacement</value>
+  </translation>
+
+  <translation>
+    <key>edit_location</key>
+    <value>Modifier un emplacement</value>
+  </translation>
+
+  <translation>
+    <key>view_location</key>
+    <value>Voir les détails d'un emplacement</value>
+  </translation>
+
+  <translation>
+    <key>list_locations</key>
+    <value>Lister tous les emplacements</value>
+  </translation>
+
+  <translation>
+    <key>name_prompt</key>
+    <value>Nom:</value>
+  </translation>
+
+  <translation>
+    <key>address_prompt</key>
+    <value>Adresse:</value>
+  </translation>
+
+  <translation>
+    <key>supplies_menu_title</key>
+    <value>Gestion des fournitures</value>
+  </translation>
+
+  <translation>
+    <key>add_supply</key>
+    <value>Ajouter une nouvelle fourniture</value>
+  </translation>
+
+  <translation>
+    <key>allocate_supply</key>
+    <value>Attribuer une fourniture</value>
+  </translation>
+
+  <translation>
+    <key>view_supplies</key>
+    <value>Voir les fournitures</value>
+  </translation>
+
+  <translation>
+    <key>list_supplies</key>
+    <value>Lister toutes les fournitures</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_prompt</key>
+    <value>Type de fourniture:</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_water</key>
+    <value>Eau</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_blanket</key>
+    <value>Couverture</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_cot</key>
+    <value>Lit de camp</value>
+  </translation>
+
+  <translation>
+    <key>supply_type_personal</key>
+    <value>Effet personnel</value>
+  </translation>
+
+  <translation>
+    <key>quantity_prompt</key>
+    <value>Quantité:</value>
+  </translation>
+
+  <translation>
+    <key>description_prompt</key>
+    <value>Description:</value>
+  </translation>
+
+  <translation>
+    <key>room_prompt</key>
+    <value>Numéro de chambre:</value>
+  </translation>
+
+  <translation>
+    <key>grid_prompt</key>
+    <value>Emplacement dans la grille:</value>
+  </translation>
+
+  <translation>
+    <key>allocate_to_prompt</key>
+    <value>Attribuer à:</value>
+  </translation>
+
+  <translation>
+    <key>allocate_to_person</key>
+    <value>Personne</value>
+  </translation>
+
+  <translation>
+    <key>allocate_to_location</key>
+    <value>Emplacement</value>
+  </translation>
+
+  <translation>
+    <key>inquiries_menu_title</key>
+    <value>Gestion des demandes de renseignements</value>
+  </translation>
+
+  <translation>
+    <key>add_inquiry</key>
+    <value>Ajouter une nouvelle demande</value>
+  </translation>
+
+  <translation>
+    <key>view_inquiry</key>
+    <value>Voir les détails d'une demande</value>
+  </translation>
+
+  <translation>
+    <key>list_inquiries</key>
+    <value>Lister toutes les demandes</value>
+  </translation>
+
+  <translation>
+    <key>inquirer_type</key>
+    <value>Type de demandeur:</value>
+  </translation>
+
+  <translation>
+    <key>inquirer_type_victim</key>
+    <value>Victime de catastrophe</value>
+  </translation>
+
+  <translation>
+    <key>inquirer_type_external</key>
+    <value>Demandeur externe</value>
+  </translation>
+
+  <translation>
+    <key>inquirer_prompt</key>
+    <value>Demandeur:</value>
+  </translation>
+
+  <translation>
+    <key>missing_person_prompt</key>
+    <value>Personne recherchée:</value>
+  </translation>
+
+  <translation>
+    <key>inquiry_date_prompt</key>
+    <value>Date de la demande (AAAA-MM-JJ):</value>
+  </translation>
+
+  <translation>
+    <key>last_known_location_prompt</key>
+    <value>Dernier emplacement connu:</value>
+  </translation>
+
+  <translation>
+    <key>info_provided_prompt</key>
+    <value>Informations fournies:</value>
+  </translation>
+
+  <translation>
+    <key>error_database_connection</key>
+    <value>Impossible de se connecter à la base de données. Vérifiez les paramètres de connexion.</value>
+  </translation>
+
+  <translation>
+    <key>error_invalid_date</key>
+    <value>Format de date invalide. Veuillez utiliser AAAA-MM-JJ.</value>
+  </translation>
+
+  <translation>
+    <key>error_invalid_gender</key>
+    <value>Genre invalide. Veuillez utiliser 'homme', 'femme' ou 'personne non binaire'.</value>
+  </translation>
+
+  <translation>
+    <key>error_loading_language</key>
+    <value>Impossible de charger le fichier de langue. Utilisation de l'anglais canadien par défaut (en-CA).</value>
+  </translation>
+
+  <translation>
+    <key>error_log_message</key>
+    <value>L'erreur a été enregistrée dans errorlog.txt</value>
+  </translation>
+
+  <translation>
+    <key>error_required_field</key>
+    <value>Ce champ est obligatoire.</value>
+  </translation>
+
+  <translation>
+    <key>report_person</key>
+    <value>%s est entré(e) dans l'établissement %s le %s.</value>
+  </translation>
+
+  <translation>
+    <key>input_firstname</key>
+    <value>Entrez le prénom de la personne:</value>
+  </translation>
