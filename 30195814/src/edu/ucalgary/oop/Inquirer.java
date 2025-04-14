@@ -5,7 +5,6 @@ public class Inquirer {
     private final String LAST_NAME;
     private final String INFO;
     private final String SERVICES_PHONE;
-    private Location location;
 
     public Inquirer(String firstName, String lastName, String phone, String info) {
         this.FIRST_NAME = firstName;
@@ -14,10 +13,12 @@ public class Inquirer {
         this.INFO = info;
 
     }
-    public Inquirer(DisasterVictim disasterVictim){
+    public Inquirer(DisasterVictim disasterVictim, String phone, String info){
         this.FIRST_NAME = disasterVictim.getFirstName();
         this.LAST_NAME = disasterVictim.getLastName();
         this.SERVICES_PHONE = phone;
+        this.INFO = info;
+        
     }
 
     public String getFirstName() { return this.FIRST_NAME; }

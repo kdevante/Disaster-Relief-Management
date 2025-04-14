@@ -212,8 +212,8 @@ public class DisasterVictim {
     }
 
     public void setGender(String gender) throws IllegalArgumentException {
-        if (!gender.matches("(?i)^(male|female|other)$")) {
-            throw new IllegalArgumentException("Invalid gender. Acceptable values are male, female, or other.");
+        if (!gender.matches("(?i)^(man|woman|non-binary)$")) {
+            throw new IllegalArgumentException("Invalid gender. Acceptable values are man, woman or non-binary.");
         }
         this.gender = gender.toLowerCase(); // Store in a consistent format
     }
