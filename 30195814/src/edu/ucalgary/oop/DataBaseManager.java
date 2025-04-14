@@ -30,7 +30,7 @@ public class DatabaseManager {
      * Constructor with default PostgreSQL connection settings
      */
     public DatabaseManager() {
-        this.url = "jdbc:postgresql://localhost:5432/project";
+        this.url = "jdbc:postgresql://localhost:5432/ensf380project";
         this.username = "oop";
         this.password = "ucalgary";
     }
